@@ -1,0 +1,45 @@
+<main class="w-screen h-screen bg-[#0a0f18] text-slate-200 overflow-hidden font-sans relative flex flex-col">
+  <!-- Header -->
+  <header class="h-14 border-b border-slate-800 bg-[#0f172a]/80 backdrop-blur-md flex items-center justify-between px-6 z-10 shrink-0">
+    <div class="flex items-center gap-3">
+      <div class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+      </div>
+      <h1 class="text-lg font-bold tracking-widest uppercase text-slate-100">Global Cyber Threat Map</h1>
+    </div>
+    <div class="flex items-center gap-6 text-xs font-mono text-slate-400">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+        SYSTEM ONLINE
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+        DEFENSE ACTIVE
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <div class="flex-1 relative">
+    <!-- Map Background -->
+    <div class="absolute inset-0 z-0">
+      <app-threat-map></app-threat-map>
+    </div>
+
+    <!-- Overlay Panels -->
+    <div class="absolute inset-0 z-10 pointer-events-none p-4 flex justify-between gap-4">
+      
+      <!-- Left Panel: Stats -->
+      <div class="w-80 h-full pointer-events-auto flex flex-col gap-4">
+        <app-threat-stats></app-threat-stats>
+      </div>
+
+      <!-- Right Panel: Live Log -->
+      <div class="w-96 h-full pointer-events-auto">
+        <app-threat-log></app-threat-log>
+      </div>
+
+    </div>
+  </div>
+</main>
