@@ -5,7 +5,8 @@
     "packageManager": "npm",
     "schematicCollections": [
       "angular-eslint"
-    ]
+    ],
+    "analytics": "36f306cc-cd66-404f-ba80-4ade78c7498f"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -19,10 +20,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "define": {
-              "GEMINI_API_KEY": "'YOUR_GEMINI_API_KEY'"
-            },
-            "browser": "src/main.ts",
+          "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
