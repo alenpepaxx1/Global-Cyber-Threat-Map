@@ -20,7 +20,7 @@ Global Cyber Threat Map is an interactive dashboard that visualizes cyberattacks
 
 ⚙️ Installation & Usage
 # Clone the repository
-git clone https://github.com/username/global-cyber-threat-map.git
+git clone https://github.com/alenpepaxx1/global-cyber-threat-map.git
 
 # Navigate into the folder
 cd global-cyber-threat-map
